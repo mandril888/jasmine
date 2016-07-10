@@ -18,10 +18,10 @@ function fizzBuzz(){
 			numbers.push('FizzBuzz');
 		} else if ( (i%3 === 0) || (toString.indexOf('3') !== -1) ){
 			numbers.push('Fizz');
-		} else if (i%5 === 0){
+		} else if ( (i%5 === 0) || (toString.indexOf('5') !== -1) ){
 			numbers.push('Buzz');
 		} else {
-		numbers.push(i);
+			numbers.push(i);
 		}
 	}
 	return numbers;

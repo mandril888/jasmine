@@ -38,13 +38,17 @@ describe("function fizzBuzz that ", function() {
         var result = fizzBuzz();
         expect( result[29] ).toBe('FizzBuzz');
     });
-   it("should return FizzBuzz in the 100th position of the array", function(){
+   it("should return Buzz in the 100th position of the array", function(){
         var result = fizzBuzz();
         expect( result[99] ).toBe('Buzz');
     });
    it("should return Fizz if a number contains the number 3 or is divisibe by 3", function(){
         var result = fizzBuzz();
         expect( result[12] ).toBe('Fizz');
+    });
+   it("should return Buzz if a number contains the number 5 or is divisibe by 5", function(){
+        var result = fizzBuzz();
+        expect( result[51] ).toBe('Buzz');
     });
 
 });
